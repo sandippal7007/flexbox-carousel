@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS carousel with flexbox</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class='wrap'>
+  <ul class='carousel is-set'>
+  <li class='carousel-seat'>
+      <h2>1</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>2</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>3</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>4</h2>
+    </li>
+    <li class='carousel-seat'>
+      <h2>5</h2>
+    </li>
+    <li class='carousel-seat is-ref'>
+      <h2>6</h2>
+    </li>
+  </ul>
+</div>
+<div class='controls'>
+  <button class='toggle' onclick="prev()">Prev</button>
+  <button class='toggle' data-toggle='next' onclick="next()">Next</button>
+  <input type="text" placeholder="Enter the slide to jump" id="jump-slide"></input>
+  <button type="submit" onclick="submit()">Jump</button>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+.wrap {
+  overflow: hidden
+}
+
+.carousel {
+  display: flex;
+  left: -33%;/*make 25% for 4 slide in a page* or 100% for single*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transform: translateX(33%); /*make 25% for 4 slide in a page* or 100% for single*/
+}
+
+
+.carousel.is-reversing {
+  transform: translateX(-33%);/*make 25% for 4 slide in a page* or 100% for single*/
+}
+.carousel.is-set {
+  transform: none;
+  transition: transform 0.5s ease-in;
+}
+
+
+.carousel-seat {
+  background: #ddd;
+  flex: 1 0 33%;
+  order: 2;
+}
+.carousel-seat:nth-child(even) {
+  background: #d5d5d5;
+}
+
+
+.carousel-seat.is-ref {
+  order: 1;
+}
+
+
+h2 {
+  color: #aaa;
+  font-size: 7em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0.6em 0;
+  text-align: center;
+}
+
+
+.controls {
+  padding: 2em;
+  text-align: center;
+}
+
+  button {
+    background: #aaa;
+    border: 0;
+    border-radius: 0.25em;
+    color: #eee;
+    padding: 0.5em 1em;
+  }
+
